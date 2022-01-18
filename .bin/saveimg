@@ -1,0 +1,13 @@
+#!/bin/bash
+#Save Screenshot developted by Mario Cristovao
+
+if [ $# -lt 1 ]
+  then
+    echo -e "Invalid Arguments."
+    echo -e "Usage: saveimg [name of img]"
+    exit 1
+fi
+
+cd ~/Pictures
+
+mv Screenshot* ~/MEGAsync/Tese/Images/$1.png

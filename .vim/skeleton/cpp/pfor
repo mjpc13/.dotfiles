@@ -1,0 +1,4 @@
+for (int *p = array_p; p < array_p + sizeof(array_p)/sizeof(*array_p); p++) 
+{
+  //insert your block of code 
+}

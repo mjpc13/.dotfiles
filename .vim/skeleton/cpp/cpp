@@ -1,0 +1,21 @@
+// CPP standart file
+
+//Libraries
+#include <iostream>
+
+using namespace std;
+
+//Function references
+
+
+//Functions
+
+
+int main(){
+
+
+  // insert your code here
+
+
+  return 0;
+}

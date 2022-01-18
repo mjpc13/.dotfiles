@@ -1,0 +1,23 @@
+\begin{figure}[H]
+     \centering
+     \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[width=0.6\linewidth]{images/image1.png}
+         \caption{Image 1 Caption}
+         \label{fig: Image Label}
+     \end{subfigure}
+     \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[width=0.6\linewidth]{Images/image.png}
+         \caption{Image Caption}
+         \label{fig:Image Label}
+     \end{subfigure}
+     \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[width=0.6\linewidth]{Images/image.png}
+         \caption{Image Caption}
+         \label{fig:Image Label}
+     \end{subfigure}
+     \caption{Image Caption}
+     \label{fig:Image Label}
+\end{figure}

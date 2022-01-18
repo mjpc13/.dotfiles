@@ -1,0 +1,19 @@
+
+#include <chrono>
+#include <fstream>
+  
+ofstream out_results("results.txt");
+for(int i = 0; i<n_tests; i++)
+{ 
+  steady_clock::time_point ti = steady_clock::now(); 
+  
+  //Insert here the function you want to time
+  
+  steady_clock::time_point tf = steady_clock::now();
+  duration<double> time_span = duration_cast<duration<double>>(tf  - ti);
+  out_results << time_span.count() << "\n";
+}
+
+cout<< "The time precision in this machine: " << steady_clock::period::num << endl;
+cout<< "  -num = " << steady_clock::period::num << endl;
+cout<< "  -den = " << steady_clock::period::den << endl;

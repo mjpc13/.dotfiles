@@ -1,0 +1,15 @@
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}[b]{0.45\linewidth}
+    \includegraphics[width=0.8\linewidth]{images/image1.jpg}
+    \caption{Image 1 Caption}
+    \label{fig: Image 1 label}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.45\linewidth}
+    \includegraphics[width=0.96\linewidth]{images/image2.jpg}
+    \caption{Image 2 Caption}
+    \label{fig: Image 2 Label}
+  \end{subfigure}
+  \caption{Image Caption}
+  \label{fig: Image Label}
+\end{figure}

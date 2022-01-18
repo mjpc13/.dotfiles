@@ -1,0 +1,94 @@
+\documentclass{article} %this makes the whole document font size 10pt by default
+%\usepackage{newtxtext,newtxmath}
+%\renewcommand{\baselinestretch}{2} %double space
+\usepackage[portuguese]{babel}
+\usepackage[paperheight=22.86cm,paperwidth=15.24cm,left=1.27cm,right=1.27cm,top=1.6cm,bottom=1.6cm,headheight=1in]{geometry}%margin specs go in here
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{bookmark}
+%harvard citation style
+\usepackage{wrapfig}
+\usepackage{url}
+\renewcommand{\UrlFont}{\small\tt}
+\usepackage{cite}
+%\bibliographystyle{apacite} %apa citation if you need
+%\usepackage[pdfborder={0 0 0}]{hyperref}%for hyperlinks without ugly boxes
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{graphbox,graphicx} %figures
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb}
+\usepackage{enumerate} %lists
+%\usepackage[font={small,sf},format=plain,labelfont=bf,up]{caption} %table and figure captions
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{sectsty}
+%\sectionfont{\fontsize{17pt}{12pt}\selectfont} %setting section font size
+\usepackage{natbib} 
+\usepackage{titlesec} %adding that dot after the section number
+\usepackage{amsmath}
+\titlelabel{\thetitle.\quad}
+\usepackage{multicol}
+
+%referencia a capitulos
+\usepackage{nameref}
+\usepackage{hyperref}
+\usepackage{float}
+\hypersetup{
+    colorlinks=true,
+    citecolor=brown,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+\urlstyle{same}
+
+\begin{document}
+
+
+\begin{center}
+    % adiciona os logos à página inicial
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.25]{../../FCTUC_U_H.jpg}
+    \end{figure}
+    {\fontsize{17.28pt}{14pt}\selectfont Faculdade de Ciências e Tecnologia da Universidade de Coimbra \par}
+
+    
+    %--------------------------------------------------------------
+    %Adiciona os titulos e autores
+    \vspace{2cm}
+    {\fontsize{21pt}{14pt}\selectfont Instrumentação Optoeletrónica \par} % Cadeira
+    \vspace{\baselineskip}
+    \vspace{0.5cm}
+    {\fontsize{12pt}{10pt}\selectfont FIBRAS ÓTICAS \par\vspace{1em}} % Titulo
+    \vspace{0.5cm}
+    {\fontsize{12pt}{10pt}\selectfont Mário Jorge Pinto Cristóvão — 2016231181 \par}
+    \vspace{\baselineskip}
+
+
+%
+%{\fontsize{9pt}{9pt}\selectfont  \par}
+%\vspace{\baselineskip}\par
+
+%\vspace{\baselineskip}\par
+    \end{center}
+\newpage
+\paragraph{}
+
+%\tableofcontents
+
+%\newpage    
+
+%----------------------------------------------------------------------------------------
+%   Section 1
+%----------------------------------------------------------------------------------------
+
+%\input{}
+
+%adiciona o ficheiro de bibliografias e o estilo, neste caso chama-se biblio.bib
+%\newpage
+%\bibliography{biblio}
+%\bibliographystyle{plain}
+
+
+\end{document}

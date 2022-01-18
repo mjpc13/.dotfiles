@@ -1,0 +1,10 @@
+//cudaEvent_t start, stop;
+//cudaEventCreate(&start);
+//cudaEventCreate(&stop);
+
+cudaEventRecord(start);
+
+cudaEventRecord(stop);
+
+cudaEventSynchronize(stop);
+cudaEventElapsedTime(milliseconds, start, stop);

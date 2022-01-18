@@ -1,0 +1,6 @@
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{images/image.png}
+  \caption{Image}
+  \label{fig:Image}
+\end{figure}

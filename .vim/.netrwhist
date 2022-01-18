@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/mjpc13/MEGAsync/CP/Python'
+let g:netrw_dirhist_7='/home/mjpc13/Downloads/examples'
+let g:netrw_dirhist_6='/home/mjpc13/Downloads'
+let g:netrw_dirhist_5='/home/mjpc13'
+let g:netrw_dirhist_4='/home/mjpc13/MEGAsync'
+let g:netrw_dirhist_3='/home/mjpc13/MEGAsync/CP'
+let g:netrw_dirhist_2='/home/mjpc13/MEGAsync/CP/Python'
+let g:netrw_dirhist_1='/home/mjpc13/MEGAsync/Metrologia/TPs/TP_2/METR2122_TP02_Mario_Cristovao'
+let g:netrw_dirhist_0='/home/mjpc13/MEGAsync/Metrologia/TPs/TP_2'
+let g:netrw_dirhist_9='/home/mjpc13/MEGAsync/CP/Python'

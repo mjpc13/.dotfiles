@@ -1,0 +1,31 @@
+cmake_minimum_required(VERSION 3.8 FATAL_ERROR)
+project(compute_mean LANGUAGES CXX CUDA)
+
+set(GENERATED_LIB static_lib)
+find_package(CUDA REQUIRED)
+
+
+add_library (${GENERATED_LIB} STATIC
+  #Add MATLAB files .cu, .h, .cpp
+	${GENERATED_LIB}.cu
+  ${GENERATED_LIB}.h
+  ${GENERATED_LIB}_data.cu
+  ${GENERATED_LIB}_data.h
+  ${GENERATED_LIB}_initialize.cu
+  ${GENERATED_LIB}_initialize.h
+  ${GENERATED_LIB}_terminate.cu
+  ${GENERATED_LIB}_terminate.h
+  
+  rtwtypes.h
+  tmwtypes.h
+)
+
+target_compile_features(${GENERATED_LIB} PUBLIC cxx_std_11)
+set_target_properties(${GENERATED_LIB} PROPERTIES CUDA_SEPARABLE_COMPILATION ON)
+
+add_executable(main examples/main.cu)
+
+target_include_directories(main PUBLIC ${CMAKE_SOURCE_DIR})
+set_target_properties(main PROPERTIES CUDA_SEPARABLE_COMPILATION ON)
+target_link_libraries(main PRIVATE ${GENERATED_LIB})
+

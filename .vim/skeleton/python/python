@@ -1,0 +1,52 @@
+import datetime, math, time, argparse
+import numpy as np
+import pandas as pd
+
+def ts_print (message):
+   """
+   ts_print prints the timestamps of the messages
+   :param message: Message string to be displayed alongside with the timestamp
+   :return: nothing  
+   """
+   now = datetime.datetime.now()
+   timestamp = now.strftime('%H:%M:%S.%f')
+   print (f'{timestamp} {message}', flush=True)
+
+
+def debug_print (message, debug):
+   """
+   debug_print: prints the message if the debug is turned on
+   :param message: Message string to be printed
+   :param debug: Boolean that decides if the messages are printed
+   :return: nothing
+   """
+   if debug:
+       ts_print (message)
+
+def time_print (message, Time):
+   """
+   time_print: prints the message if the time flag is turned on
+   :param message: Message string to be printed
+   :param debug: Boolean that decides if the messages are printed
+   :return: nothing
+   """
+   if Time:
+       ts_print(message)
+
+def main(debug, t):
+  pass
+
+
+if __name__ == "__main__":
+   try:
+       parser = argparse.ArgumentParser()
+       parser.add_argument("--debug", action="store_true")
+       parser.add_argument("--time", action="store_true")
+       args = parser.parse_args()
+
+       debug = args.debug #sets value of the debug
+       t = args.time if not debug else True
+       main(debug, t) #execute the main function
+
+   except:
+       print("Some error was encountered")
